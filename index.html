@@ -1,50 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    section {
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- USE <img src== TO ADD IMAGE TO PAGE-->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOk9k_3fiIUAEk51KFZK_p5DRC7yI4X2V7Cju18HnyHWbURGMpZHUrLK8JNu8kTEhyTY&usqp=CAU" alt="">
-    <main>
-        <section id="home">
-            <h1 class="head">Welcome to My Website</h1>
-            <p>My name is al-ameen adetola, i am a bachelor of science in Information Technology major. </p>
-        </section>
-            <p>Fun Fact About Me:</p>
-            <p>I am nigerian</p>
-            <p>I was born August 28th 2002</p>
-            <p>I am a fashion model, content creator, and clothing brand business owner.</p>
 
+  <header>
+    <h1>Your Name</h1>
+    <p>Welcome to my portfolio website</p>
+  </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <section id="about" style="display: none;">
-            <h2>About Us</h2>
-            <p>This is the About page.</p>
-        </section>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Add information about yourself here.</p>
+  </section>
 
-        <section id="contact" style="display: none;">
-            <h2>Contact Us</h2>
-            <p>This is the Contact page.</p>
-        </section>
-    </main>
+  <section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>Description of Project 1</p>
+    </div>
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>Description of Project 2</p>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
 
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: +1234567890</p>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Your Name</p>
+  </footer>
+
 </body>
 </html>
